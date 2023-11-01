@@ -11,6 +11,22 @@ The CITY table is described as follows:
 *Solution:*
 <br />
 ```sql
-SELECT * FROM your_table
-WHERE condition = 'something';
+SELECT *
+FROM city
+WHERE population > 100000 
+    AND countrycode = 'USA';
 ```
+
+**Challenge 2: Revising the Select Query II**
+
+Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.
+
+*Solution:*
+<br />
+```sql
+SELECT name
+FROM city
+WHERE population > 120000 
+    AND countrycode = 'USA';
+```
+
