@@ -81,7 +81,7 @@ WC &= ((f_1+f_4+f_5+f_6+f_7) \times 250 + (p_1+p_6+p_7) \times 150) \\
 \end{align*}
 ```
 
-1. Minimal number of nurses requirement:
+2. Minimal number of nurses requirement:
 
 ```math
 \begin{align*}
