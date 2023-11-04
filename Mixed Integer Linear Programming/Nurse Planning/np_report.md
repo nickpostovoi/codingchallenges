@@ -24,86 +24,82 @@ Formulate and solve a mathematical program (MILP) to answer the following questi
 ## Formulation:
 
 #### Decision variables:
-$$
+```math
 \begin{align*}
 f_i & : \text{number of full-time nurses starting a cycle in day of the week } i \\
 p_i & : \text{number of part-time nurses starting a cycle in day of the week } i
-\end{align*} \\
+\end{align*}
+```
+```math
 \text{where } i \in \{1,2,3,4,5,6,7\} \text{ (days of the week)}
-$$
+```
 
 #### Objective function:
 
-$$
+```math
 \begin{align*}
-& \text{Minimize WC (weekly cost)} = \\
-& \quad ((f_1+f_4+f_5+f_6+f_7 ) \cdot 250 + (p_1+p_6+p_7 ) \cdot 150) + \\
-& \quad ((f_1+f_2+f_5+f_6+f_7 ) \cdot 250 + (p_1+p_2+p_7 ) \cdot 150) + \\
-& \quad ((f_1+f_2+f_3+f_6+f_7 ) \cdot 250 + (p_1+p_2+p_3 ) \cdot 150) + \\
-& \quad ((f_1+f_2+f_3+f_4+f_7 ) \cdot 250 + (p_2+p_3+p_4 ) \cdot 150) + \\
-& \quad ((f_1+f_2+f_3+f_4+f_5 ) \cdot 250 + (p_3+p_4+p_5 ) \cdot 150) + \\
-& \quad ((f_2+f_3+f_4+f_5+f_6 ) \cdot 315 + (p_4+p_5+p_6 ) \cdot 185) + \\
-& \quad ((f_3+f_4+f_5+f_6+f_7 ) \cdot 375 + (p_5+p_6+p_7 ) \cdot 225) \\
-& = 1250 \cdot f_1 + 1315 \cdot f_2 + 1375 \cdot f_7 + 1440 \cdot f_3 + 1440 \cdot f_4 + \\
-& \quad 1440 \cdot f_5 + 1440 \cdot f_6 + 450 \cdot p_1 + 450 \cdot p_2 + 450 \cdot p_3 + \\
-& \quad 485 \cdot p_4 + 525 \cdot p_7 + 560 \cdot p_5 + 560 \cdot p_6
+WC &= ((f_1+f_4+f_5+f_6+f_7) \times 250 + (p_1+p_6+p_7) \times 150) \\
+&+ ((f_1+f_2+f_5+f_6+f_7) \times 250 + (p_1+p_2+p_7) \times 150) \\
+&+ ((f_1+f_2+f_3+f_6+f_7) \times 250 + (p_1+p_2+p_3) \times 150) \\
+&+ ((f_1+f_2+f_3+f_4+f_7) \times 250 + (p_2+p_3+p_4) \times 150) \\
+&+ ((f_1+f_2+f_3+f_4+f_5) \times 250 + (p_3+p_4+p_5) \times 150) \\
+&+ ((f_2+f_3+f_4+f_5+f_6) \times 315 + (p_4+p_5+p_6) \times 185) \\
+&+ ((f_3+f_4+f_5+f_6+f_7) \times 375 + (p_5+p_6+p_7) \times 225) \\
+&= 1250 \times f_1 + 1315 \times f_2 + 1375 \times f_7 + 1440 \times f_3 \\
+&+ 1440 \times f_4 + 1440 \times f_5 + 1440 \times f_6 + 450 \times p_1 \\
+&+ 450 \times p_2 + 450 \times p_3 + 485 \times p_4 + 525 \times p_7 + 560 \times p_5 + 560 \times p_6
 \end{align*}
-$$
+```
 
 #### Subject to:
 
 1. Part-time requirement:
-$$
+```math
 \begin{align*}
-&\biggl(
-p_1+p_6+p_7 + \\
-&p_1+p_2+p_7 + \\
-&p_1+p_2+p_3 + \\
-&p_2+p_3+p_4 + \\
-&p_3+p_4+p_5 + \\
-&p_4+p_5+p_6 + \\
-&p_5+p_6+p_7
-\biggr) \leq \\
-&\biggl( 
-\biggl(
-p_1+p_6+p_7 + \\
-&p_1+p_2+p_7 + \\
-&p_1+p_2+p_3 + \\
-&p_2+p_3+p_4 + \\
-&p_3+p_4+p_5 + \\
-&p_4+p_5+p_6 + \\
-&p_5+p_6+p_7
-\biggr) + \\
-&\biggl(
-f_1+f_4+f_5+f_6+f_7 + \\
-&f_1+f_2+f_5+f_6+f_7 + \\
-&f_1+f_2+f_3+f_6+f_7 + \\
-&f_1+f_2+f_3+f_4+f_7 + \\
-&f_1+f_2+f_3+f_4+f_5 + \\
-&f_2+f_3+f_4+f_5+f_6 + \\
-&f_3+f_4+f_5+f_6+f_7
-\biggr)
-\biggr) \times 0.25
+&\left( (p_{1}+p_{6}+p_{7})+ \right. \\
+&\left. (p_{1}+p_{2}+p_{7})+ \right. \\
+&\left. (p_{1}+p_{2}+p_{3})+ \right. \\
+&\left. (p_{2}+p_{3}+p_{4})+ \right. \\
+&\left. (p_{3}+p_{4}+p_{5})+ \right. \\
+&\left. (p_{4}+p_{5}+p_{6})+ \right. \\
+&\left. (p_{5}+p_{6}+p_{7}) \right) \\
+&\leq \left( \right. \\
+&\left( (p_{1}+p_{6}+p_{7})+ \right. \\
+&\left. (p_{1}+p_{2}+p_{7})+ \right. \\
+&\left. (p_{1}+p_{2}+p_{3})+ \right. \\
+&\left. (p_{2}+p_{3}+p_{4})+ \right. \\
+&\left. (p_{3}+p_{4}+p_{5})+ \right. \\
+&\left. (p_{4}+p_{5}+p_{6})+ \right. \\
+&\left. (p_{5}+p_{6}+p_{7}) \right) + \\
+&\left( (f_{1}+f_{4}+f_{5}+f_{6}+f_{7})+ \right. \\
+&\left. (f_{1}+f_{2}+f_{5}+f_{6}+f_{7})+ \right. \\
+&\left. (f_{1}+f_{2}+f_{3}+f_{6}+f_{7})+ \right. \\
+&\left. (f_{1}+f_{2}+f_{3}+f_{4}+f_{7})+ \right. \\
+&\left. (f_{1}+f_{2}+f_{3}+f_{4}+f_{5})+ \right. \\
+&\left. (f_{2}+f_{3}+f_{4}+f_{5}+f_{6})+ \right. \\
+&\left. (f_{3}+f_{4}+f_{5}+f_{6}+f_{7}) \right) \times 0.25
 \end{align*}
-$$
+```
 
-2. Minimal number of nurses requirement:
-$$
+1. Minimal number of nurses requirement:
+
+```math
 \begin{align*}
-&\quad (f_1+f_4+f_5+f_6+f_7 )+(p_1+p_6+p_7 )\geq 17 \\
-&\quad (f_1+f_2+f_5+f_6+f_7 )+(p_1+p_2+p_7 )\geq 13 \\
-&\quad (f_1+f_2+f_3+f_6+f_7 )+(p_1+p_2+p_3 )\geq 15 \\
-&\quad (f_1+f_2+f_3+f_4+f_7 )+(p_2+p_3+p_4 )\geq 19 \\
-&\quad (f_1+f_2+f_3+f_4+f_5 )+(p_3+p_4+p_5 )\geq 14 \\
-&\quad (f_2+f_3+f_4+f_5+f_6 )+(p_4+p_5+p_6 )\geq 16 \\
-&\quad (f_3+f_4+f_5+f_6+f_7 )+(p_5+p_6+p_7 )\geq 11 \\
+&(f_{1}+f_{4}+f_{5}+f_{6}+f_{7})+(p_{1}+p_{6}+p_{7}) \geq 17 \\
+&(f_{1}+f_{2}+f_{5}+f_{6}+f_{7})+(p_{1}+p_{2}+p_{7}) \geq 13 \\
+&(f_{1}+f_{2}+f_{3}+f_{6}+f_{7})+(p_{1}+p_{2}+p_{3}) \geq 15 \\
+&(f_{1}+f_{2}+f_{3}+f_{4}+f_{7})+(p_{2}+p_{3}+p_{4}) \geq 19 \\
+&(f_{1}+f_{2}+f_{3}+f_{4}+f_{5})+(p_{3}+p_{4}+p_{5}) \geq 14 \\
+&(f_{2}+f_{3}+f_{4}+f_{5}+f_{6})+(p_{4}+p_{5}+p_{6}) \geq 16 \\
+&(f_{3}+f_{4}+f_{5}+f_{6}+f_{7})+(p_{5}+p_{6}+p_{7}) \geq 11
 \end{align*}
-$$
+```
+
 
 ## Solution
 
 [Link to R code file](https://github.com/nickpostovoi/projects/blob/997eac779e8f51a7e248e6d837f3c9872bc50cec/Mixed%20Integer%20Linear%20Programming/Nurse%20Planning/np_code.r)
-f
+
 ![Alt text](np_solution.png)
 
 ## Interpretation
