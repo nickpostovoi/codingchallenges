@@ -21,20 +21,91 @@ Formulate and solve a mathematical program (MILP) to answer the following questi
 1. How many full-time and how many part-time nurses should the infusion center have on its payroll to minimize the total nursing cost, while meeting all requirements?
 2. How much is the minimum total cost per week?
 
-## Solution:
+## Formulation:
 
-Decision variables:
+#### Decision variables:
+$$
+\begin{align*}
+f_i & : \text{number of full-time nurses starting a cycle in day of the week } i \\
+p_i & : \text{number of part-time nurses starting a cycle in day of the week } i
+\end{align*} \\
+\text{where } i \in \{1,2,3,4,5,6,7\} \text{ (days of the week)}
+$$
 
-\(f_i\) = number of full-time nurses starting a cycle in day of a week \(i\)
-\(p_i\) = number of part-time nurses starting a cycle in day of a week \(i\)
+#### Objective function:
 
-where 
-\(i \in \{1,2,3,4,5,6,7\}\)  (days of a week)
+$$
+\begin{align*}
+& \text{Minimize WC (weekly cost)} = \\
+& \quad ((f_1+f_4+f_5+f_6+f_7 ) \cdot 250 + (p_1+p_6+p_7 ) \cdot 150) + \\
+& \quad ((f_1+f_2+f_5+f_6+f_7 ) \cdot 250 + (p_1+p_2+p_7 ) \cdot 150) + \\
+& \quad ((f_1+f_2+f_3+f_6+f_7 ) \cdot 250 + (p_1+p_2+p_3 ) \cdot 150) + \\
+& \quad ((f_1+f_2+f_3+f_4+f_7 ) \cdot 250 + (p_2+p_3+p_4 ) \cdot 150) + \\
+& \quad ((f_1+f_2+f_3+f_4+f_5 ) \cdot 250 + (p_3+p_4+p_5 ) \cdot 150) + \\
+& \quad ((f_2+f_3+f_4+f_5+f_6 ) \cdot 315 + (p_4+p_5+p_6 ) \cdot 185) + \\
+& \quad ((f_3+f_4+f_5+f_6+f_7 ) \cdot 375 + (p_5+p_6+p_7 ) \cdot 225) \\
+& = 1250 \cdot f_1 + 1315 \cdot f_2 + 1375 \cdot f_7 + 1440 \cdot f_3 + 1440 \cdot f_4 + \\
+& \quad 1440 \cdot f_5 + 1440 \cdot f_6 + 450 \cdot p_1 + 450 \cdot p_2 + 450 \cdot p_3 + \\
+& \quad 485 \cdot p_4 + 525 \cdot p_7 + 560 \cdot p_5 + 560 \cdot p_6
+\end{align*}
+$$
 
+#### Subject to:
 
-Minimize the weekly cost:
-WC = ((f_1+f_4+f_5+f_6+f_7)*250 + (p_1+p_6+p_7)*150) + ((f_1+f_2+f_5+f_6+f_7)*250 + (p_1+p_2+p_7)*150) + ((f_1+f_2+f_3+f_6+f_7)*250 + (p_1+p_2+p_3)*150) + ((f_1+f_2+f_3+f_4+f_7)*250 + (p_2+p_3+p_4)*150) + ((f_1+f_2+f_3+f_4+f_5)*250 + (p_3+p_4+p_5)*150) + ((f_2+f_3+f_4+f_5+f_6)*315 + (p_4+p_5+p_6)*185) + ((f_3+f_4+f_5+f_6+f_7)*375 + (p_5+p_6+p_7)*225)
-= 1250*f_1 + 1315*f_2 + 1375*f_7 + 1440*f_3 + 1440*f_4 + 1440*f_5 + 1440*f_6 + 450*p_1 + 450*p_2 + 450*p_3 + 485*p_4 + 525*p_7 + 560*p_5 + 560*p_6
+1. Part-time requirement:
+$$
+\begin{align*}
+&\biggl(
+p_1+p_6+p_7 + \\
+&p_1+p_2+p_7 + \\
+&p_1+p_2+p_3 + \\
+&p_2+p_3+p_4 + \\
+&p_3+p_4+p_5 + \\
+&p_4+p_5+p_6 + \\
+&p_5+p_6+p_7
+\biggr) \leq \\
+&\biggl( 
+\biggl(
+p_1+p_6+p_7 + \\
+&p_1+p_2+p_7 + \\
+&p_1+p_2+p_3 + \\
+&p_2+p_3+p_4 + \\
+&p_3+p_4+p_5 + \\
+&p_4+p_5+p_6 + \\
+&p_5+p_6+p_7
+\biggr) + \\
+&\biggl(
+f_1+f_4+f_5+f_6+f_7 + \\
+&f_1+f_2+f_5+f_6+f_7 + \\
+&f_1+f_2+f_3+f_6+f_7 + \\
+&f_1+f_2+f_3+f_4+f_7 + \\
+&f_1+f_2+f_3+f_4+f_5 + \\
+&f_2+f_3+f_4+f_5+f_6 + \\
+&f_3+f_4+f_5+f_6+f_7
+\biggr)
+\biggr) \times 0.25
+\end{align*}
+$$
 
+2. Minimal number of nurses requirement:
+$$
+\begin{align*}
+&\quad (f_1+f_4+f_5+f_6+f_7 )+(p_1+p_6+p_7 )\geq 17 \\
+&\quad (f_1+f_2+f_5+f_6+f_7 )+(p_1+p_2+p_7 )\geq 13 \\
+&\quad (f_1+f_2+f_3+f_6+f_7 )+(p_1+p_2+p_3 )\geq 15 \\
+&\quad (f_1+f_2+f_3+f_4+f_7 )+(p_2+p_3+p_4 )\geq 19 \\
+&\quad (f_1+f_2+f_3+f_4+f_5 )+(p_3+p_4+p_5 )\geq 14 \\
+&\quad (f_2+f_3+f_4+f_5+f_6 )+(p_4+p_5+p_6 )\geq 16 \\
+&\quad (f_3+f_4+f_5+f_6+f_7 )+(p_5+p_6+p_7 )\geq 11 \\
+\end{align*}
+$$
 
+## Solution
 
+[Link to R code file](Mixed%20Integer%20Linear%20Programming/Nurse%20Planning/np_code.r)
+
+![Alt text](np_solution.png)
+
+## Interpretation
+
+The infusion centre should employ a total of 25 nurses, made up of 17 full-time nurses and 8 part-time nurses, to maximise staffing and reduce overall nursing costs while upholding all regulations. The following schema is proposed to be used for the full-time nurses: A total of 8 nurses begin their work week on Monday, followed by four on Tuesday, two on Wednesday, two on Thursday, and one on Sunday. The schedule for the part-time nursing staff should be two nurses starting their work week on Thursday and six nurses starting on Saturday. By using this solution, the infusion centre can provide patients with high-quality care while maintaining a minimum total cost of 26725 per week.
