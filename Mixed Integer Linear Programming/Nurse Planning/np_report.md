@@ -103,7 +103,7 @@ $$
 ## Solution
 
 [Link to R code file](https://github.com/nickpostovoi/projects/blob/997eac779e8f51a7e248e6d837f3c9872bc50cec/Mixed%20Integer%20Linear%20Programming/Nurse%20Planning/np_code.r)
-
+f
 ![Alt text](np_solution.png)
 
 ## Interpretation
