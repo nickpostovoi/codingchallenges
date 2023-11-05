@@ -51,3 +51,15 @@ $x_{1,3} + x_{2,3} + \text{inv}X_{2} = 6000$ (no inventory at the end of March) 
 $\text{inv}Y_{1} = y_{1,1} + y_{2,1} - 2000$ </br>
 $\text{inv}Y_{2} = y_{1,2} + y_{2,2} + \text{inv}Y_{1} - 10000$ </br>
 $y_{1,3} + y_{2,3} + \text{inv}Y_{2} = 10000$ (no inventory at the end of March) </br>
+
+### Outcome: LP HAS NO PRIMAL FEASIBLE SOLUTION
+
+
+
+To overcome this issue, it is needed to find the minimum relaxation needed for a feasible solution. It could be done by introducing slack variables into constraints. Slack variables represent the extent to which a constraint is relaxed, so their values are the smallest relaxation needed for feasibility.
+
+### New decision variables
+$s_{i,j} = \text{extra plant } i \text{ availability in month } j$
+
+
+
