@@ -23,7 +23,7 @@ Formulate and solve a mathematical program (MILP) to answer the following questi
 
 ## Formulation:
 
-#### Decision variables:
+### Decision variables:
 ```math
 \begin{align*}
 f_i & : \text{number of full-time nurses starting a cycle in day of the week } i \\
@@ -34,7 +34,7 @@ p_i & : \text{number of part-time nurses starting a cycle in day of the week } i
 \text{where } i \in \{1,2,3,4,5,6,7\} \text{ (days of the week)}
 ```
 
-#### Objective function:
+### Objective function:
 
 ```math
 \begin{align*}
@@ -51,7 +51,7 @@ WC &= ((f_1+f_4+f_5+f_6+f_7) \times 250 + (p_1+p_6+p_7) \times 150) \\
 \end{align*}
 ```
 
-#### Subject to:
+### Subject to:
 
 1. Part-time requirement:
 ```math
