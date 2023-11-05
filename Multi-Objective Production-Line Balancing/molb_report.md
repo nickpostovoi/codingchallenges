@@ -28,3 +28,60 @@ Figure 5. Example of a local search console output
 ![Alt text](molb_asset_5.png)
 
 The limitation of the current implementation of stochastic search is that it is implemented in a "top-to-bottom" manner, starting with many workstations and removing them during optimisation. The drawback of that approach is that it becomes hard for the search to converge to the least possible workstations in a reasonable time frame. The workaround would be implementing the search differently; starting the initial solution with the least likely number of workstations and optimising this solution would likely yield better results.
+
+## Appendix
+
+**Solution:**
+
+$workstations[[1]] </br>
+[1] 2 1 4 3
+
+$workstations[[2]] </br>
+[1] 7 5 6 9
+
+$workstations[[3]] </br>
+[1] 11 12  8 10
+
+$workstations[[4]] </br>
+[1] 14 15 13 19
+
+$workstations[[5]] </br>
+[1] 17 18 16
+
+$workstations[[6]] </br>
+[1] 20 21 22 23
+
+$workstations[[7]] </br>
+[1] 24 26 25
+
+$workstations[[8]] </br>
+[1] 28 27 29 30
+
+
+$workstation_load </br>
+[1] 36 35 36 36 30 33 33 36
+
+
+$workstation_tools[[1]] </br>
+[1]    "M2"
+
+$workstation_tools[[2]] </br>
+[1] "M3"    "M1"
+
+$workstation_tools[[3]] </br>
+[1]    "M2" "M3"
+
+$workstation_tools[[4]] </br>
+[1] "M3"   
+
+$workstation_tools[[5]] </br>
+[1]    "M1" "M2"
+
+$workstation_tools[[6]] </br>
+[1] "M1"    "M3"
+
+$workstation_tools[[7]] </br>
+[1] "M3"   
+
+$workstation_tools[[8]] </br>
+[1] "M3" "M1"
