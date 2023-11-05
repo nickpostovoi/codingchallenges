@@ -30,7 +30,7 @@ While it does not include projects from my time at Nestle due to the company pol
 
 ## Project 1: 🚔 Examining Use of Force by the Metropolitan Police Service
 
-- **🎯 Aim:** Inform future policies by analyzing variables related to the use of force by Metropolitan Police Service in London.
+- **🎯 Aim:** Inform future policies by analyzing variables related to the use of force by Metropolitan Police Service.
 - **🔍 Research Questions:**
   1. Which characteristics explain odds of using different types of force? What are their directions and magnitudes?
   2. Can subject behavior be predicted before an encounter using 'foreknowledge'?
