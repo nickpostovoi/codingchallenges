@@ -44,8 +44,8 @@ While it does not include projects from my time at Nestle due to the company pol
   - Use-of-force forms data
   - Street crime statistics 
   - Official UK Census 2021
-
-🔗 [Link to Code](path_to_code) </br>
-🔗 [Link to Report](path_to_report) </br>
+  
+🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Report/uof_report.md) </br>
+🔗 [Link to Code Files](https://github.com/nickpostovoi/projects/tree/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Code) </br>
 
 
