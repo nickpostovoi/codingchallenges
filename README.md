@@ -101,7 +101,14 @@ While it does not include projects from my time at Nestle due to the company pol
   - **Goals:** Devise a production schedule for maximum total profit and determine the total profit under the optimal production schedule.
   - 🔗 [Link to Solution](https://github.com/nickpostovoi/projects/blob/cb3eb786d218ae6afb7af7a045897621691a5505/Mixed%20Integer%20Linear%20Programming/Ocean%20Internet%20Cables/oic_report.md) </br>
 
+## Project 5. 📈 Investment Portfolio Optimization with Rolling Window Simulation
 
+- **🎯 Aim:** Perform a rolling window simulation on a historical stock price data from Yahoo Finance to recalculate the optimal portfolio at each moment of time, assuming the step of recalculation and window prior to optimization.
+- **🔧 Methods:**
+  - Data retrieval and preprocessing using `yfinance` and `pandas`.
+  - Rolling window simulation with optimization using `PyPortfolioOpt`.
+  - Visualization of results with `matplotlib`.
+- **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/b871577c95c437fb1bb0a21368936c63e615deb7/Portfolio%20Optimization%20Simulation/portfolio_optimization_rolwind.md)**
 
 
 
