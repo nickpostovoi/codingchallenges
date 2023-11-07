@@ -48,18 +48,19 @@ While it does not include projects from my time at Nestle due to the company pol
 🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Report/uof_report.md) </br>
 🔗 [Link to Code Files](https://github.com/nickpostovoi/projects/tree/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Code) </br>
 
-## Project 2: 📈 Predicting Twitter Engagement Using Textual Data
+## Project 2: 📈 Predicting Twitter Engagement using Text Data Mining
 
 - **🎯 Aim:**
-  - Employ machine learning techniques to analyze Donald Trump's tweets and predict the engagement metrics.
-  - Text analysis is a key component of this project.
+  - Employ machine learning techniques to analyze tweets and predict the engagement metrics.
+  - TDM is a key component of this project.
 - **🔍 Methodology:**
-  - Comprehensive data cleaning and preprocessing, including the removal of retweets, URLs, and special characters.
-  - Feature engineering with a focus on text-derived features (e.g. word count, character usage, tokenization, sentiment analysis and many others).
+  - Comprehensive data cleaning and preprocessing.
+  - Feature engineering with a focus on text-derived features.
+  - Sentiment analysis.
   - Utilization of Gradient Boosting Trees and Ridge Regularized Linear Regression models for predictive modeling.
   - Hyperparameter optimization for fine-tuning the models.
 - **📊 Results:**
-  - The Gradient Boosting model demonstrates superior performance, explaining 47.1% of the variability (R^2) in likes count.
+  - The Gradient Boosting model demonstrates superior performance, explaining 47.1% of the variability ($R^2$) in likes count.
   - Noteworthy insights are derived from feature importance analysis, emphasizing factors such as word choice, character usage, and timing of tweet publication.
 - **📝 Recommendations:**
   - Tailored recommendations provided to optimize engagement.
@@ -67,6 +68,21 @@ While it does not include projects from my time at Nestle due to the company pol
 
 🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_report.md) </br>
 🔗 [Link to Jupyter Notebook](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_code.ipynb) </br>
+
+## Project 3: 🏭 Multiobjective Line Balancing in Manufacturing
+
+- **🎯 Aim:** Optimize assembly line design by balancing tasks across workstations to meet production goals while considering economic, social, and environmental factors.
+- **🔍 Description:**
+  - The project revolves around optimizing the assembly line design for a manufacturer. This involves sequencing 30 tasks based on a precedence diagram, each with specific processing times and tool requirements. The goal is to ensure that one unit of the product is assembled every 40 seconds (takt time) while adhering to precedence constraints.
+  - The project employs a multiobjective approach, considering economic, social, and environmental objectives. The economic objective focuses on minimizing the number of workstations, which translates to lower labor and space costs. The social objective aims to maximize operator workload smoothness, enhancing fairness and reducing ergonomic risks. The environmental objective targets the reduction of cordless power tool usage, thereby minimizing hazardous materials.
+- **🔧 Methods:**
+  - Global search using Genetic Algorithm (GA)
+  - Local search for iterative improvement
+  - Incorporation of takt time, precedence constraints, task time, and tool requirements
+
+🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_report.md) </br>
+🔗 [Link to Code](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_code.R) </br>
+
 
 
   
