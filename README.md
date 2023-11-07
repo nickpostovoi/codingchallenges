@@ -48,4 +48,25 @@ While it does not include projects from my time at Nestle due to the company pol
 🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Report/uof_report.md) </br>
 🔗 [Link to Code Files](https://github.com/nickpostovoi/projects/tree/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Code) </br>
 
+## Project 2: 📈 Predicting Twitter Engagement Using Textual Data
 
+- **🎯 Aim:**
+  - Employ machine learning techniques to analyze Donald Trump's tweets and predict the engagement metrics.
+  - Text analysis is a key component of this project.
+- **🔍 Methodology:**
+  - Comprehensive data cleaning and preprocessing, including the removal of retweets, URLs, and special characters.
+  - Feature engineering with a focus on text-derived features (e.g. word count, character usage, tokenization, sentiment analysis and many others).
+  - Utilization of Gradient Boosting Trees and Ridge Regularized Linear Regression models for predictive modeling.
+  - Hyperparameter optimization for fine-tuning the models.
+- **📊 Results:**
+  - The Gradient Boosting model demonstrates superior performance, explaining 47.1% of the variability (R^2) in likes count.
+  - Noteworthy insights are derived from feature importance analysis, emphasizing factors such as word choice, character usage, and timing of tweet publication.
+- **📝 Recommendations:**
+  - Tailored recommendations provided to optimize engagement.
+  - Strategies include curating tweet content, managing character usage, timing publication strategically, and incorporating specific keywords for enhanced visibility and interaction.
+
+🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_report.md) </br>
+🔗 [Link to Jupyter Notebook](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_code.ipynb) </br>
+
+
+  
