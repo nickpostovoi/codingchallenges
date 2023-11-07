@@ -50,9 +50,7 @@ While it does not include projects from my time at Nestle due to the company pol
 
 ## Project 2: 📈 Predicting Twitter Engagement using Text Data Mining
 
-- **🎯 Aim:**
-  - Employ machine learning techniques to analyze tweets and predict the engagement metrics.
-  - TDM is a key component of this project.
+- **🎯 Aim:** Employ TDM techniques to analyze tweets and predict the engagement metrics.
 - **🔍 Methodology:**
   - Comprehensive data cleaning and preprocessing.
   - Feature engineering with a focus on text-derived features.
@@ -81,7 +79,29 @@ While it does not include projects from my time at Nestle due to the company pol
   - Incorporation of takt time, precedence constraints, task time, and tool requirements
 
 🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_report.md) </br>
-🔗 [Link to Code](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_code.R) </br>
+🔗 [Link to R Code](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_code.R) </br>
+
+## Project 4: 🧠 Application of Mixed Integer Linear Programming (MILP) to Problem Solving
+
+- **👩‍⚕️ Task 1: Nurse Planning**
+  - **Objective:** Create an optimal nurse schedule for the infusion center to meet patient needs and minimize costs.
+  - **Constraints and Costs:** Includes details on nurse types, schedules, and associated costs.
+  - **Goals:** Minimize total nursing cost and meet weekly nurse requirements.
+  - 🔗 [Link to Solution](https://github.com/nickpostovoi/projects/blob/cb3eb786d218ae6afb7af7a045897621691a5505/Mixed%20Integer%20Linear%20Programming/Nurse%20Planning/np_report.md) </br>
+  
+- **🚚 Task 2: Chipset Logistics**
+  - **Objective:** Optimize the shipment of semiconductor chipsets produced by factories to car manufacturing plants.
+  - **Constraints and Costs:** Details on chip production, shipment costs, and reliability measures.
+  - **Goals:** Minimize the total shipment cost and meet the demands for both plants.
+  - 🔗 [Link to Solution](https://github.com/nickpostovoi/projects/blob/cb3eb786d218ae6afb7af7a045897621691a5505/Mixed%20Integer%20Linear%20Programming/Chipset%20Logistics/cl_report.md) </br>
+
+- **🌐 Task 3: Ocean Internet Cables**
+  - **Objective:** Optimize the production schedule of two types of ocean Internet cables to maximize total profit.
+  - **Constraints and Costs:** Details on demand, plant availability, production rates, and costs.
+  - **Goals:** Devise a production schedule for maximum total profit and determine the total profit under the optimal production schedule.
+  - 🔗 [Link to Solution](https://github.com/nickpostovoi/projects/blob/cb3eb786d218ae6afb7af7a045897621691a5505/Mixed%20Integer%20Linear%20Programming/Ocean%20Internet%20Cables/oic_report.md) </br>
+
+
 
 
 
