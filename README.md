@@ -110,5 +110,19 @@ While it does not include projects from my time at Nestle due to the company pol
   - Visualization of results with `matplotlib`.
 - **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/b871577c95c437fb1bb0a21368936c63e615deb7/Portfolio%20Optimization%20Simulation/portfolio_optimization_rolwind.md)**
 
+## Project 6: 📈 Predicting Insurance Product Purchases
+
+- **🎯 Aim:** Build a classier utilizing supervised learning algorithms to predict the likelihood of a prospective customer acquiring a life insurance product.
+- **🛠️ Methods:**
+  - Rigorous data cleaning involved addressing missing values, rectifying typos, and engineered feature creation.
+  - Employed Gradient Boosting, Naive Bayes, k-Nearest Neighbours, Random Forest, Decision Tree and Logistic Regression.
+  - Hyperparameter optimization via GridSearchCV was executed to fine-tune model performance.
+- **📊 Results and Discussion:**
+  - Preliminary exploratory analysis unveiled critical insights into variable importance and distribution characteristics.
+  - Feature importance scores were computed, unveiling significant predictors for insurance subscription probability.
+  - Model evaluation hinged on AUC, accuracy, precision, recall, and F1 scores, with Gradient Boosting exhibiting superior performance across all metrics.
+- **🔗 [Link to Jupyter Notebook](https://github.com/nickpostovoi/projects/blob/4af9595fc2b6830a8ca3ab9d95fd5f20b5dd0b35/Insurance%20Purchase%20Prediction/ipp_code.ipynb)**
+- **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/4af9595fc2b6830a8ca3ab9d95fd5f20b5dd0b35/Insurance%20Purchase%20Prediction/ipp_report.md)**
+ 
 ### 💡 Note:
 The projects showcased in this portfolio represent a carefully curated selection from my academic endeavors, designed to demonstrate a diverse range of my expertise to a potential employer. Please note that these are just a subset of my work, and I look forward to further expanding this collection with other projects.
