@@ -110,7 +110,7 @@ While it does not include projects from my time at Nestle due to the company pol
   - Visualization of results with `matplotlib`.
 - **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/b871577c95c437fb1bb0a21368936c63e615deb7/Portfolio%20Optimization%20Simulation/portfolio_optimization_rolwind.md)**
 
-## Project 6: 📈 Predicting Insurance Product Purchases
+## Project 6: 📑 Predicting Insurance Product Purchases
 
 - **🎯 Aim:** Build a classier utilizing supervised learning algorithms to predict the likelihood of a prospective customer acquiring a life insurance product.
 - **🛠️ Methods:**
