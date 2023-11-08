@@ -110,6 +110,5 @@ While it does not include projects from my time at Nestle due to the company pol
   - Visualization of results with `matplotlib`.
 - **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/b871577c95c437fb1bb0a21368936c63e615deb7/Portfolio%20Optimization%20Simulation/portfolio_optimization_rolwind.md)**
 
-
-
-  
+### 💡 Note:
+The projects showcased in this portfolio represent a carefully curated selection from my academic endeavors, designed to demonstrate a diverse range of my expertise to a potential employer. Please note that these are just a subset of my work, and I look forward to further expanding this collection with other projects.
