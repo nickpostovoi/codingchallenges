@@ -44,9 +44,8 @@ While it does not include projects from my time at Nestle due to the company pol
   - Use-of-force forms data
   - Street crime statistics 
   - Official UK Census 2021
-  
-🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Report/uof_report.md) </br>
-🔗 [Link to Code Files](https://github.com/nickpostovoi/projects/tree/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Code) </br>
+- **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Report/uof_report.md)**
+- **🔗 [Link to Code Files](https://github.com/nickpostovoi/projects/tree/e04b70daaffefcfbbbe23fbb93900fc1a677dc08/Use%20of%20Force%20by%20MPS/Code)**
 
 ## Project 2: 📈 Predicting Twitter Engagement using Text Data Mining
 
@@ -63,9 +62,8 @@ While it does not include projects from my time at Nestle due to the company pol
 - **📝 Recommendations:**
   - Tailored recommendations provided to optimize engagement.
   - Strategies include curating tweet content, managing character usage, timing publication strategically, and incorporating specific keywords for enhanced visibility and interaction.
-
-🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_report.md) </br>
-🔗 [Link to Jupyter Notebook](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_code.ipynb) </br>
+- **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_report.md)**
+- **🔗 [Link to Jupyter Notebook](https://github.com/nickpostovoi/projects/blob/6c1dea08a790be7bd8712f195d457b1d68e43d07/Text%20Mining%20and%20Twitter/tmt_code.ipynb)**
 
 ## Project 3: 🏭 Multiobjective Line Balancing in Manufacturing
 
@@ -77,9 +75,8 @@ While it does not include projects from my time at Nestle due to the company pol
   - Global search using Genetic Algorithm (GA)
   - Local search for iterative improvement
   - Incorporation of takt time, precedence constraints, task time, and tool requirements
-
-🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_report.md) </br>
-🔗 [Link to R Code](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_code.R) </br>
+- **🔗 [Link to Report](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_report.md)**
+- **🔗 [Link to R Code](https://github.com/nickpostovoi/projects/blob/311ba6f5080f680485032f341b8d4d78b5b02874/Multi-Objective%20Production-Line%20Balancing/molb_code.R)**
 
 ## Project 4: 🧠 Application of Mixed Integer Linear Programming (MILP) to Problem Solving
 
@@ -112,7 +109,7 @@ While it does not include projects from my time at Nestle due to the company pol
 
 ## Project 6: 📑 Predicting Insurance Product Purchases
 
-- **🎯 Aim:** Build a classier utilizing supervised learning algorithms to predict the likelihood of a prospective customer acquiring a life insurance product.
+- **🎯 Aim:** Build a classifier utilizing supervised learning algorithms to predict the likelihood of a prospective customer acquiring a life insurance product.
 - **🛠️ Methods:**
   - Rigorous data cleaning involved addressing missing values, rectifying typos, and engineered feature creation.
   - Employed Gradient Boosting, Naive Bayes, k-Nearest Neighbours, Random Forest, Decision Tree and Logistic Regression.
