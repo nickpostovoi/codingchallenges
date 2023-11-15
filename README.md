@@ -8,7 +8,7 @@
 
 ## 🚀 Introduction
 
-Welcome to my **portfolio**! I am a dedicated data analytics practitioner with a proven track record in leveraging *data-driven insights* to make informed business decisions. With over a year of experience at *Nestle's Market Intelligence department* as a *Market Analyst*, I've honed my skills in database management, reporting, automation and more. My academic journey culminated at *Queen's University Belfast*, where I graduated with first-class honors in *MSc Business Analytics*, solidifying the foundation for my thriving career in data analytics. 
+Welcome to my **portfolio**! I am a dedicated data analytics practitioner with a proven track record in leveraging *data-driven insights* to make informed business decisions. With over a year of experience at *Nestle's Market Intelligence department* as a *Market Analyst*, I've honed my skills in database management, reporting, automation and more. My academic journey culminated at *Queen's University Belfast*, where I acquired a Master's degree in *Business Analytics*, solidifying the foundation for my thriving career in data analytics. 
 
 ## 🔍 Portfolio Highlights
 
